@@ -1,4 +1,5 @@
-const express = require('express');
+
+import express from 'express';
 const router = express.Router();
 
 // GET route for fetching dashboard data
@@ -25,4 +26,4 @@ router.delete('/:id', (req, res) => {
   res.send(`Deleting dashboard data with ID ${id}`);
 });
 
-module.exports = router;
+export default router;

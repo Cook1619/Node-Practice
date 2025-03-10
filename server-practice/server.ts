@@ -1,7 +1,8 @@
-const express = require('express');
+import express from 'express';
+import dashboardRoutes from './Routers/dashboardRoutes';
+
 const app = express();
 const port = 3000;
-const dashboardRoutes = require('./Routers/dashboardRoutes');
 
 app.use(express.json()); // Middleware to parse JSON bodies
 
