@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import * as dashboardService from '../Services/dashboardService';
+import * as dashboardService from '../services/dashboardService';
 
 export const getDashboardData = (req: Request, res: Response) => {
   const data = dashboardService.fetchDashboardData();
